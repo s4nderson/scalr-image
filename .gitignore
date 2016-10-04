@@ -1,5 +1,5 @@
 target/
-build/*
+build/
 buildSrc/build/*
 *.iml
 .idea/

@@ -24,15 +24,15 @@ shadowJar {
 }
 
 
-task stage {
-    dependsOn build, Assemble
-}
 assemble.dependsOn shadowJar
 
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.4.6'
 }
 
+task stage {
+    dependsOn build, assemble
+}
 
 jar {
     manifest {
